@@ -968,7 +968,7 @@ function SomeLib:Window(text,mainclr,cls)
                 Icon.BorderColor3 = Color3.fromRGB(27, 42, 53)
                 Icon.Position = UDim2.new(0, 8, 0, 8)
                 Icon.Size = UDim2.new(0, 13, 0, 13)
-                Icon.Image = "https://img.freepik.com/free-vector/cute-kitsune-with-sword-cartoon-character-art-object-isolated_138676-3159.jpg"
+                Icon.Image = "https://images-ext-1.discordapp.net/external/4dasT7bqtGUMFxiLx-ltp6ra6MuQrnhQUxZenVOrsf4/%3Fsize%3D4096/https/cdn.discordapp.com/icons/1028524353803010138/0c8d0d55862979fefe3d2f5dc97e057a.png?width=384&height=384"
                 Icon.ImageColor3 = Color3.fromRGB(31, 31, 31)
 
                 if default == true then
@@ -988,7 +988,7 @@ function SomeLib:Window(text,mainclr,cls)
                         TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
                         {ImageTransparency = 1}
                     ):Play()
-                    Icon.Image = "https://img.freepik.com/free-vector/cute-kitsune-with-sword-cartoon-character-art-object-isolated_138676-3159.jpg"
+                    Icon.Image = "https://images-ext-1.discordapp.net/external/4dasT7bqtGUMFxiLx-ltp6ra6MuQrnhQUxZenVOrsf4/%3Fsize%3D4096/https/cdn.discordapp.com/icons/1028524353803010138/0c8d0d55862979fefe3d2f5dc97e057a.png?width=384&height=384"
                     wait(.1)
                     TweenService:Create(
                         Icon,
@@ -1017,7 +1017,7 @@ function SomeLib:Window(text,mainclr,cls)
                             TweenInfo.new(.3, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
                             {ImageTransparency = 1}
                         ):Play()
-                        Icon.Image = "https://img.freepik.com/free-vector/cute-kitsune-with-sword-cartoon-character-art-object-isolated_138676-3159.jpg"
+                        Icon.Image = "https://images-ext-1.discordapp.net/external/4dasT7bqtGUMFxiLx-ltp6ra6MuQrnhQUxZenVOrsf4/%3Fsize%3D4096/https/cdn.discordapp.com/icons/1028524353803010138/0c8d0d55862979fefe3d2f5dc97e057a.png?width=384&height=384"
                         wait(.1)
                         TweenService:Create(
                             Icon,
