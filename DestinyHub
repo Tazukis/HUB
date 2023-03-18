@@ -1943,7 +1943,7 @@ end
 
 local win = SomeLib:Window("", _G.Color, _G.Toggle)
 
-local Library = win:Server("DESTINY HUB","")
+local Library = win:Server("SNOWFOX HUB","")
 
 local Main = Library:Channel("Main","rbxassetid://11446825283")
 local Setting = Library:Channel("Settings","rbxassetid://11446835336")
