@@ -33,7 +33,7 @@ local ThunderImageUI = Instance.new("ImageLabel")
         ThunderImageUI.BorderSizePixel = 0
         ThunderImageUI.Position = UDim2.new(0.0, 0, 0.0, 0)
         ThunderImageUI.Size = UDim2.new(0, 50, 0, 50)
-        ThunderImageUI.Image = "http://www.roblox.com/asset/?id=12609719637"
+        ThunderImageUI.Image = "http://www.roblox.com/asset/?id=4364968297"
 
 if game:GetService("CoreGui"):FindFirstChild("SOME X GUI") then
 	game:GetService("CoreGui"):FindFirstChild("SOME X GUI"):Destroy()
@@ -4742,6 +4742,52 @@ Setting:Toggle("Skill Z",true,function(a)
 	Setting:Toggle("Skill V",true,function(a)
 		_G.SkillV = a
 	end)
+
+Main:Label("\\\\\  Server  //")
+
+Time = Main:Label("Executer Time")
+
+function UpdateTime()
+local GameTime = math.floor(workspace.DistributedGameTime+0.5)
+local Hour = math.floor(GameTime/(60^2))%24
+local Minute = math.floor(GameTime/(60^1))%60
+local Second = math.floor(GameTime/(60^0))%60
+Time:Set("[GameTime] : Hours : "..Hour.." Minutes : "..Minute.." Seconds : "..Second)
+end
+
+spawn(function()
+ while task.wait() do
+ pcall(function()
+  UpdateTime()
+  end)
+ end
+ end)
+
+Client = Main:Label("Client")
+
+function UpdateClient()
+local Fps = workspace:GetRealPhysicsFPS()
+Client:Refresh("[Fps] : "..Fps)
+end
+
+spawn(function()
+ while true do wait(.1)
+ UpdateClient()
+ end
+ end)
+
+Client1 = Main:Label("Client")
+
+function UpdateClient1()
+local Ping = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValueString()
+Client1:Refresh("[Ping] : "..Ping)
+end
+
+spawn(function()
+ while true do wait(.1)
+ UpdateClient1()
+ end
+ end)
 
 
 Main:Line()
